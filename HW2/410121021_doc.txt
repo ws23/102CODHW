@@ -1,0 +1,85 @@
+------------------------------------------------------------------------
+[ASIGNMENT]
+	Using SPIM, please write and test a MIPS assembly program that sorts a sequence of integers. The sequence of integers should be provided by user through keyboard. The end of the sequence is indicated by a zero. The sorted sequence should be printed on screen. The type of sorting algorithm is arbitrary but should be implemented by calling a subroutine. Please follow the general guideline for programming homeworks and submit your source code file through course ftp. Please write your report as comments in the beginning of your code file and use your student id as the name of the code file.
+
+------------------------------------------------------------------------
+[INTRODUCTION]
+	Use MIPS assembly program to sort a sequence of integers which is typed by user through keyboard. 
+
+------------------------------------------------------------------------
+[PROCEDURES]
+main: 
+	1. to initial some register to prepare the process
+	2. to print the input message to tell user type in the values
+
+enterValues: 
+	1. to get the integer from user's keyboard
+	2. loop the action until the input value is 0
+	3. if the first value of input is 0, means no element to sort, so can exit this program
+
+bubbleSort: 
+	1. the sorting algorithm 
+	2. the first layer of loop
+
+loopElements: 
+	1. the second layer of loop
+	2. if the element is bigger than the next element, do swap
+
+tail: 
+	1. do the layer 2 variable change to loop the second loop
+	2. end the layer 2 back to layer 1
+
+end: 
+	1. print the completition message on screen
+
+show: 
+	1. print the sorted sequence
+	2. back to the main, and loop the program
+
+exit: 
+	1. exit the program
+
+
+this program is similar to the C code below: 
+
+--
+
+int a[i], i, j;
+
+void show(){
+	printf("%d ", a[i++]);
+}
+
+void bubbleSort(){
+	for(;i>=0;i--) // the first layer of loop
+		for(j=0;j<i;j++) // the second layer of loop
+			if(a[i]>a[i+1})
+				swap(a[i], a[i+1]);
+	show();
+	printf("\n\n");
+}
+
+int main(){
+	n = 0;
+	while(scanf("%d", &a[i++]))
+		if(a[i-1]==0)
+			break;
+	if(i-1==0)
+		return 0;
+	bubbleSort();
+}
+
+------------------------------------------------------------------------
+[CONCLUSIONS]
+
+	This experiment always crashed at first. It cannot be typed in values so I cannot do the sorting action. The I/O problem made me trouble. 
+
+	Until I search for the system call, the I/O problem has been solved. Then I met the problem of the address mistake. 
+
+	Made sure of the address control, and the experiment has completed. 
+
+------------------------------------------------------------------------
+[INFO]
+
+資工二 410121021 林育慈
+"Computer Organization and Design", spring, 2014. Homework 2
