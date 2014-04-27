@@ -82,4 +82,4 @@ int main(){
 [INFO]
 
 資工二 410121021 林育慈
-"Computer Organization and Design", spring, 2014. Homework 2
+"Computer Organization and Assembly Language", spring, 2014. Homework 2
